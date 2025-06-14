@@ -21,17 +21,17 @@ export const NavBar = () => {
                         <NavigationMenuList>
                             <NavigationMenuItem>
                                 <NavigationMenuLink asChild>
-                                    <a href="/docs">Документация</a>
+                                    <a href="http://docs.codebattles.ru" target="_blank">Документация</a>
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
+                            {/*<NavigationMenuItem>*/}
+                            {/*    <NavigationMenuLink asChild>*/}
+                            {/*        <a href="http://docs.codebattles.ru">Репозиторий задач</a>*/}
+                            {/*    </NavigationMenuLink>*/}
+                            {/*</NavigationMenuItem>*/}
                             <NavigationMenuItem>
                                 <NavigationMenuLink asChild>
-                                    <a href="/docs">Репозиторий задач</a>
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink asChild>
-                                    <a href="/docs">Гитхаб</a>
+                                    <a href="http://github.com/codebattles-nn/codebattles" target="_blank">Гитхаб</a>
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                         </NavigationMenuList>

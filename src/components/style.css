@@ -1,0 +1,3 @@
+.big-header {
+    min-height: calc(100dvh - 0.25rem*15);
+}

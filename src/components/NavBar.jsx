@@ -9,7 +9,7 @@ import Image from "next/image";
 export const NavBar = () => {
     return (
         <>
-            <nav className="flex items-center justify-between p-4 border-b bg-black text-white shadow-sm">
+            <nav className="h-15 flex items-center justify-between p-4 border-b bg-black text-white shadow-sm">
                 {/* Левая часть: иконка */}
                 <div className="flex items-center gap-2">
                     <Image src="/logo200.png" alt="logo" height="30" width="30" />

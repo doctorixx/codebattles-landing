@@ -5,6 +5,7 @@ import {
     NavigationMenuTrigger
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
+import {Button} from "@/components/ui/button";
 
 export const NavBar = () => {
     return (
@@ -17,25 +18,12 @@ export const NavBar = () => {
 
                 {/* Правая часть: ссылки */}
                 <div className="flex gap-6 text-sm font-medium text-gray-700">
-                    <NavigationMenu>
-                        <NavigationMenuList>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink asChild>
-                                    <a href="http://docs.codebattles.ru" target="_blank">Документация</a>
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            {/*<NavigationMenuItem>*/}
-                            {/*    <NavigationMenuLink asChild>*/}
-                            {/*        <a href="http://docs.codebattles.ru">Репозиторий задач</a>*/}
-                            {/*    </NavigationMenuLink>*/}
-                            {/*</NavigationMenuItem>*/}
-                            <NavigationMenuItem>
-                                <NavigationMenuLink asChild>
-                                    <a href="http://github.com/codebattles-nn/codebattles" target="_blank">Гитхаб</a>
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                        </NavigationMenuList>
-                    </NavigationMenu>
+                    <Button asChild>
+                        <a href="https://docs.codebattles.ru">Документация</a>
+                    </Button>
+                    <Button asChild>
+                        <a href="https://github.com/codebattles-nn">GitHub</a>
+                    </Button>
                 </div>
             </nav>
         </>

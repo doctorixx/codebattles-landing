@@ -13,6 +13,11 @@ import {
 export function Features() {
     const features = [
         {
+            title: "ТОП 1 ПРОЕКТ",
+            description: "По мнению конкурса Всероссийский конкурс проектов с открытым кодом https://foss.kruzhok.org/",
+            icon: <IconHeart/>,
+        },
+        {
             title: "Проверка кода",
             description:
                 "Автоматическая проверка задач с кодом",
@@ -52,11 +57,7 @@ export function Features() {
                 "Добавление своих языков, гибкие настройки соревнований",
             icon: <IconAdjustmentsBolt/>,
         },
-        {
-            title: "ТОП 1 ПРОЕКТ",
-            description: "По мнению конкурса Всероссийский конкурс проектов с открытым кодом https://foss.kruzhok.org/",
-            icon: <IconHeart/>,
-        },
+
     ];
     return (
         <div

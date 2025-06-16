@@ -14,7 +14,7 @@ export function Features() {
     const features = [
         {
             title: "ТОП 1 ПРОЕКТ",
-            description: "По мнению конкурса Всероссийский конкурс проектов с открытым кодом https://foss.kruzhok.org/",
+            description: "По мнению Всероссийского конкурса проектов с открытым кодом https://foss.kruzhok.org/",
             icon: <IconHeart/>,
         },
         {
@@ -37,7 +37,7 @@ export function Features() {
         },
         {
             title: "Self-hosted",
-            description: "Возможно размещение в закрытом контурк",
+            description: "Возможно размещение в закрытом контуре",
             icon: <IconCloud/>,
         },
         {

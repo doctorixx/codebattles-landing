@@ -4,10 +4,8 @@ import {Button} from "@/components/ui/button";
 import Link from 'next/link'
 import {getTranslation} from "@/lib/getTranslation";
 
-export default async function NotFound(args) {
-    const { params } = await args
-    const { lang } = await params
-    const t = getTranslation(lang)
+export default async function NotFound() {
+    const t = getTranslation("en")
 
     return (
         <div

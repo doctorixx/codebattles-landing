@@ -7,27 +7,45 @@ export const NavBar = ({lang}) => {
 
     const t = getTranslation(lang)
 
+    const LangButton = <Button asChild variant="secondary">
+        <Link href={t.OTHER_LANG_URL}>
+            {t.changeTranslation}
+        </Link>
+    </Button>
+
+    const DocsButton = <Button asChild>
+        <a href="https://docs.codebattles.ru">{t.docs}</a>
+    </Button>
+
+    const GithubButton = <Button asChild>
+        <a href="https://github.com/codebattles-nn">{t.github}</a>
+    </Button>
+
+
     return (
         <>
-            <nav className="h-15 flex items-center justify-between p-4 border-b bg-black text-white shadow-sm">
+            {/* For desktop */}
+            <nav className="sm:flex hidden h-15 items-center justify-between p-4 border-b bg-black text-white shadow-sm">
                 {/* Левая часть: иконка */}
                 <div className="flex items-center gap-10">
-                    <Image src="/logo200.png" alt="logo" height="30" width="30" />
-                    <Button asChild>
-                        <Link href={t.OTHER_LANG_URL}>
-                            {t.changeTranslation}
-                        </Link>
-                    </Button>
+                    <Image src="/logo200.png" alt="logo" height="30" width="30"/>
+                    {LangButton}
                 </div>
 
                 {/* Правая часть: ссылки */}
                 <div className="flex gap-6 text-sm font-medium text-gray-700">
-                    <Button asChild>
-                        <a href="https://docs.codebattles.ru">{t.docs}</a>
-                    </Button>
-                    <Button asChild>
-                        <a href="https://github.com/codebattles-nn">{t.github}</a>
-                    </Button>
+                    {DocsButton}
+                    {GithubButton}
+                </div>
+            </nav>
+            {/* For mobile */}
+            <nav className="flex sm:hidden h-15 items-center justify-between p-4 border-b bg-black text-white shadow-sm">
+                {/* Левая часть: иконка */}
+                <div className="flex items-center gap-3">
+                    <Image src="/logo200.png" alt="logo" height="30" width="30" className="mr-5"/>
+                    {LangButton}
+                    {DocsButton}
+                    {GithubButton}
                 </div>
             </nav>
         </>

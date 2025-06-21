@@ -1,0 +1,46 @@
+{
+  "OTHER_LANG_URL": "ru",
+  "changeTranslation": "Русский",
+  "docs": "Documentation",
+  "github": "Github",
+  "mainChampter_title": "Need to organize champ?",
+  "productName": "Codebattles",
+  "subChapter_info": "Platform for programming competitions (Algorithms, CTF, ...)",
+  "subChapter_toDocs": "Check docs",
+  "slides_title": "And where is the app?",
+  "slides_subTitle": "And here it is)",
+  "features": {
+    "topProject": {
+      "title": "TOP 1 PROJECT",
+      "description": "According to the All-Russian Open-Source Project Competition https://foss.kruzhok.org/"
+    },
+    "codeCheck": {
+      "title": "Code Check",
+      "description": "Automatic code task verification"
+    },
+    "easyStart": {
+      "title": "Easy to Start",
+      "description": "Everything is done through a graphical web interface"
+    },
+    "free": {
+      "title": "Free",
+      "description": "Your only task is to find a device."
+    },
+    "selfHosted": {
+      "title": "Self-hosted",
+      "description": "Can be deployed in a closed environment"
+    },
+    "openSource": {
+      "title": "OpenSource",
+      "description": "The project is open-source—anyone can contribute their own additions"
+    },
+    "support": {
+      "title": "Support",
+      "description": "The project is actively developed, and the creators are ready to answer all your questions"
+    },
+    "flexibleConfig": {
+      "title": "Flexible Configuration",
+      "description": "Add custom languages, flexible competition settings"
+    }
+  }
+}

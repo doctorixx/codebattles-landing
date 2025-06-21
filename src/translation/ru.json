@@ -1,0 +1,46 @@
+{
+  "OTHER_LANG_URL": "en",
+  "changeTranslation": "English",
+  "docs": "Документация",
+  "github": "Github",
+  "mainChampter_title": "Нужно провести соревнование?",
+  "productName": "Codebattles",
+  "subChapter_info": "Платформа для проведения соревнований по программированию (Алгоритмы, CTF, ...)",
+  "subChapter_toDocs": "К документации",
+  "slides_title": "А где же приложение?",
+  "slides_subTitle": "А вот оно)",
+  "features": {
+    "topProject": {
+      "title": "ТОП 1 ПРОЕКТ",
+      "description": "По мнению Всероссийского конкурса проектов с открытым кодом https://foss.kruzhok.org/"
+    },
+    "codeCheck": {
+      "title": "Проверка кода",
+      "description": "Автоматическая проверка задач с кодом"
+    },
+    "easyStart": {
+      "title": "Легко начать",
+      "description": "Все делается через графический веб интерфейс"
+    },
+    "free": {
+      "title": "Бесплатно",
+      "description": "Ваша задача - найти устройство."
+    },
+    "selfHosted": {
+      "title": "Self-hosted",
+      "description": "Возможно размещение в закрытом контуре"
+    },
+    "openSource": {
+      "title": "OpenSource",
+      "description": "Проект имеет открытый исходный код - каждый сможет добавить что-то свое"
+    },
+    "support": {
+      "title": "Поддержка",
+      "description": "Проект активно развивается, а разработчики готовы ответить на все ваши вопросы"
+    },
+    "flexibleConfig": {
+      "title": "Гибкая настройка",
+      "description": "Добавление своих языков, гибкие настройки соревнований"
+    }
+  }
+}

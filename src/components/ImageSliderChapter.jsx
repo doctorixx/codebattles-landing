@@ -3,9 +3,10 @@ import { motion } from "motion/react";
 import React from "react";
 import {ImagesSlider} from "@/components/ui/images-slider";
 import {Button} from "@/components/ui/button";
+import {getTranslation} from "@/lib/getTranslation";
 
 
-export function ImageSliderChapter() {
+export function ImageSliderChapter({lang}) {
     // const images = [
     //     "https://docs.codebattles.ru/~gitbook/image?url=https%3A%2F%2F1527359246-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FJAUsvmB78I2ZCHp8dXqy%252Fuploads%252FHTffuvdPZkfuPsqdsXTO%252Fimage.png%3Falt%3Dmedia%26token%3Db0be020d-57db-4457-b8e9-982c4d8bb791&width=768&dpr=4&quality=100&sign=7a6cfc24&sv=2",
     //     "https://docs.codebattles.ru/~gitbook/image?url=https%3A%2F%2F1527359246-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FJAUsvmB78I2ZCHp8dXqy%252Fuploads%252Fo2fb1jOZIaS0610B7ljS%252Fimage.png%3Falt%3Dmedia%26token%3D7cf652b1-7e1d-4b3f-a7c9-876480615a18&width=768&dpr=4&quality=100&sign=e703ec2f&sv=2",
@@ -13,6 +14,9 @@ export function ImageSliderChapter() {
     //     "https://docs.codebattles.ru/~gitbook/image?url=https%3A%2F%2F1527359246-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FJAUsvmB78I2ZCHp8dXqy%252Fuploads%252FEXwaUiHae88CZDdJArRz%252Fimage.png%3Falt%3Dmedia%26token%3Df98407c6-b97e-46fd-9441-d9c47d670b93&width=768&dpr=4&quality=100&sign=91ec1288&sv=2"
     // ];
     //
+
+    const t = getTranslation(lang);
+
     const images = [
         "/previews/1.jpg",
         "/previews/2.jpg",
@@ -36,14 +40,9 @@ export function ImageSliderChapter() {
                 className="z-50 flex flex-col justify-center items-center">
                 <motion.p
                     className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-                    А где же приложение? <br /> А вот оно)
+                    {t.slides_title}<br /> {t.slides_subTitle}
                 </motion.p>
-                {/*<button*/}
-                {/*    className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">*/}
-                {/*    <span>Join now →</span>*/}
-                {/*    <div*/}
-                {/*        className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />*/}
-                {/*</button>*/}
+
                 <Button asChild>
                     <a href="https://github.com/codebattles-nn/codebattles" target="_blank">Github</a>
                 </Button>

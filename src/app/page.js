@@ -1,22 +1,12 @@
-import {BigHeader} from "@/components/BigHeader";
-import {NavBar} from "@/components/NavBar";
-import {Features} from "@/components/Features";
-import {SubMain} from "@/components/SubMain";
-import {Footer} from "@/components/Footer";
-import {ImageSliderChapter} from "@/components/ImageSliderChapter";
-import {ProgramingLangChapter} from "@/components/ProgramingLangChapter";
+import {redirect} from 'next/navigation'
+import {headers} from "next/headers";
 
-export default function Home() {
-    return (
-       <>
-           <NavBar />
-           <BigHeader />
-           <SubMain />
-           {/*<ProgramingLangChapter />*/}
-           <ImageSliderChapter />
-           <Features />
-           <div className="h-30" />
-           <Footer />
-       </>
-    );
+export default async function Home() {
+    const headersList = await headers()
+    const acceptLanguage = headersList.get('accept-language') || ""
+    const language = acceptLanguage.startsWith('ru') ? 'ru' : 'en';
+
+    redirect(`/${language}`)
+
+    return <></>;
 }

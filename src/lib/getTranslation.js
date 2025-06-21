@@ -6,4 +6,6 @@ export const getTranslation = (language) => {
     if (language === "ru") return ru
     if (language === "en") return en
 
+    return en
+
 }

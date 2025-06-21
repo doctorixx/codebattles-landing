@@ -42,5 +42,10 @@
       "title": "Flexible Configuration",
       "description": "Add custom languages, flexible competition settings"
     }
+  },
+  "not_found": {
+    "title": "Uuups... Not found",
+    "subtitle": "Our developers already working on it",
+    "homeBtn": "Go home"
   }
 }

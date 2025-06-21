@@ -41,8 +41,8 @@ export const NavBar = ({lang}) => {
             {/* For mobile */}
             <nav className="flex sm:hidden h-15 items-center justify-between p-4 border-b bg-black text-white shadow-sm">
                 {/* Левая часть: иконка */}
-                <div className="flex items-center gap-3">
-                    <Image src="/logo200.png" alt="logo" height="30" width="30" className="mr-5"/>
+                <div className="flex items-center gap-1">
+                    <Image src="/logo200.png" alt="logo" height="30" width="30" className="mr-2"/>
                     {LangButton}
                     {DocsButton}
                     {GithubButton}
